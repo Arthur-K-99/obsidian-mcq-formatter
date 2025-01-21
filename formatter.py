@@ -53,13 +53,13 @@ def format_questions_for_obsidian(questions, answers):
         if q_number in answers:
             formatted_questions.append(
                 f"""
-### Question {q_number}:
+### Question {q_number}
 {question['text']}
 
--**A.** {question['options']['A']}
--**B.** {question['options']['B']}
--**C.** {question['options']['C']}
--**D.** {question['options']['D']}
+- **A.** {question['options']['A']}
+- **B.** {question['options']['B']}
+- **C.** {question['options']['C']}
+- **D.** {question['options']['D']}
 
 > [!faq]- Answer  
 > **Correct Answer:** {answers[q_number]["correct_option"]}  
